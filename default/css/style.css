@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400');
+@import url('../../../bootstrap/css/bootstrap.min.css');
+/*Overview of css
+-general settings
+-nav bar
+-layouts
+-screen size (small, medium, big)*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*navigation --begin*/
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 99;
+
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	margin-left: auto;
+	line-height: normal;
+}
+/*navagation --end*/
+/*background images --begin*/
+.backgroundImage {
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.imageOne {
+	background-image: url("https://static.pexels.com/photos/7100/iphone-desk-laptop-notebook.jpg");
+}
+
+/*.imageOne {
+	background-image: url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg");
+}*/
+
+.imageTwo {
+	background-image: url("https://static.pexels.com/photos/141784/pexels-photo-141784.jpeg");
+}
+
+img {
+	max-height: 150px;
+  margin: 0 auto;
+  display: inline-block;
+}
+/*background images -- end*/
+/*section --begin*/
+.sectionBlue {
+	background-color: #2E4172;
+	overflow: auto;
+}
+.sectionOlive {
+	background-color: #9FC2CC;
+	overflow: auto;
+}
+.textBox {
+	text-align: center;
+}
+.banner {
+	position: absolute;
+	width: 100%;
+	padding: 25% 0%;
+}
+
+.about {
+	padding: 1% 2%;
+	position: relative;
+	font-weight: 400;
+}
+
+/*Standard devices*/
+h1, h2, h3, h4, h5, h6, p {
+	/*margin-bottom: 20px;*/
+	color: #FCFCFC;
+}
+
+h1 {
+	font-weight: 100;
+}
+h2 {
+	font-weight: 100;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 300%;
+	}
+}
+
+@media (min-width: 500px) {
+	h1 {
+		font-size: 500%;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 800px) {
+	h1 {
+		font-size: 700%;
+	}
+}
